@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Compass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=" shortcut icon" type="image/png" href="img/compass.png" />
+
+    <link rel="stylesheet" href="./css/index.css" type="text/css" media="screen" />
+
+    <!-- Icon Set -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <div class="clockContainer">
+        <div class="clock shadow">
+            <h2 id="displayClock"></h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="searchContainer">
+            <form class="searchForm" action="https://duckduckgo.com/" method="get">
+                <input class="searchBox" id="searchBox" value="" type="text" name="q" placeholder="What's on mind?" autocomplete="off">
+            </form>
+            <!-- BANG COMMANDS FOR DuckDuckGo -->
+            <!-- https://duckduckgo.com/bang -->
+            <div class="bangCommands">
+                <h4 style="margin: 0.25rem 0">!Bang Commands</h4>
+                <div class="bangButton">
+                    <div>
+                        <!-- You can add more button or edit the buttons using a format: command <space> Caption
+                             ex: !G (Google) or !G Google, the important part is the command, make sure it's valid
+                             check more command at https://duckduckgo.com/bang -->
+                        <button class="bang-button btn">!G (Google)</button>
+                        <button class="bang-button btn">!yt (Youtube)</button>
+                        <button class="bang-button btn">!npm (NPM)</button>
+                        <button class="bang-button btn">!spy (Spotify)</button>
+                        <button class="bang-button btn">!r (Reddit)</button>
+                        <a href="https://duckduckgo.com/bang" class="btn">
+                            <i class="bi bi-three-dots"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shortcutContainer">
+            <a href="https://www.youtube.com" class="shortcutLink"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.twitch.tv" class="shortcutLink"><i class="bi bi-twitch"></i></a>
+            <a href="https://www.github.com" class="shortcutLink"><i class="bi bi-github"></i></a>
+            <a href="https://web.whatsapp.com" class="shortcutLink"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://classroom.google.com/u/1/h" class="shortcutLink"><i class="bi bi-book-half"></i></a>
+        </div>
+    </div>
+
+    <div class="quoteContainer">
+        <div>
+            <p id="quoteText"></p>
+            <p class="quoteAuthor">&horbar; <span id="quoteAuthor"></span></p>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./js/clock.js"></script>
+    <script type="text/javascript" src="./js/quote.js"></script>
+    <script type="text/javascript" src="./js/search.js"></script>
+</body>
+</html>
